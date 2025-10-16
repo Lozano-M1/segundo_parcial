@@ -1,0 +1,14 @@
+Table Planes {
+id_planes    serial [pk]
+  id_users_planes int
+  nombre_planes varchar
+  precio_usd  decimal
+   }
+
+
+
+nombre_planes, precio_usd
+("Basico", 7.99)
+("Estandar", 12.99)
+("Premium", 15.99)
+

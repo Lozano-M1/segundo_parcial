@@ -1,0 +1,35 @@
+Table Suscripciones {
+  id_suscripciones  serial [pk]
+  usuario  varchar
+  plan        text
+  fecha_inicio int
+  fecha_fin    int
+}
+
+
+usuario, plan, fecha_inicio, fecha_fin
+("lozano", "Basico", 20230101, 20231231)
+("gomez", "Estandar", 20230201, 20240201)
+("martinez", "Premium", 20230301, 20240301)
+("fernandez", "Familiar", 20230401, 20240401)
+("sanchez", "Estudiante", 20230501, 20240501)
+("ramirez", "Anual", 20230601, 20240601)
+("torres", "Mensual", 20230701, 20240701)
+("flores", "Trimestral", 20230801, 20240801)
+("rivera", "Semestral", 20230901, 20240901)
+("gonzalez", "VIP", 20231001, 20241001)
+("lopez", "Corporativo", 20231101, 20241101)
+("diaz", "Individual", 20231201, 20241201)
+("morales", "Duo", 20240101, 20250101)
+("castro", "Grupo", 20240201, 20250201)
+("ruiz", "Pro", 20240301, 20250301)
+("mendoza", "Lite", 20240401, 20250401)
+("vargas", "Plus", 20240501, 20250501)
+("ramos", "Max", 20240601, 20250601)
+("jimenez", "Ultra", 20240701, 20250701)
+("silva", "Mega", 20240801, 20250801)
+("navarro", "VIP", 20240901, 20250901)
+("mejia", "Corporativo", 20241001, 20251001)
+("cortez", "Individual", 20241101, 20251101)
+("soto", "Duo", 20241201, 20251201)
+("mora", "Grupo", 20240101, 20250101)

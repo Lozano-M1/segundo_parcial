@@ -1,0 +1,40 @@
+    Table Users (
+  id_users serial [pk]
+  username varchar [unique]
+  email varchar
+  contrasena varchar(10)
+   )
+
+
+
+username, email, contrasena
+("lozano", "lozano@example.com", 1234567890)
+("gomez", "gomez@example.com", 0987654321)
+("martinez", "martinez@example.com", 1122334455)
+("fernandez", "fernandez@example.com", 1234567890)
+("sanchez", "sanchez@example.com", 0987654321)  
+("ramirez", "ramirez@example.com", 1122334455)
+("torres", "torres@example.com", 1234567890)
+("flores", "flores@example.com", 0987654321)
+("rivera", "rivera@example.com", 1122334455)
+("gonzalez", "gonzalez@example.com", 1234567890)
+("lopez", "lopez@example.com", 0987654321)
+("diaz", "diaz@example.com", 1122334455)
+("morales", "morales@example.com", 1234567890)
+("castro", "castro@example.com", 0987654321)
+("ruiz", "ruiz@example.com", 1122334455)
+("mendoza", "mendoza@example.com", 1234567890)
+("vargas", "vargas@example.com", 0987654321)
+("ramos", "ramos@example.com", 1122334455)
+("jimenez", "jimenez@example.com", 1234567890)
+("silva", "silva@example.com", 0987654321 )
+("navarro", "navarro@example.com", 1122334455)
+("mejia", "mejia@example.com", 1234567890)
+("cortez", "cortez@example.com", 0987654321)
+("soto", "soto@example.com", 1122334455)
+("mora", "mora@example.com", 1234567890)
+
+
+
+
+

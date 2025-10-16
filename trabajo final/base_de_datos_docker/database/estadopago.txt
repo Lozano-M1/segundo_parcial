@@ -1,0 +1,10 @@
+Table EstadoPago {
+  id_estado_pago  serial [pk]
+  completado varchar
+
+
+}
+
+completado 
+("si")
+("no")

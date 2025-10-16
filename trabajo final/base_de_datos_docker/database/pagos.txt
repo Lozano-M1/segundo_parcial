@@ -1,0 +1,40 @@
+Table Pagos {
+  id_pagos       serial [pk]
+  suscripcion_hd varchar
+  monto_usd   decimal
+  estado      varchar
+  pagado      varchar
+}
+
+
+suscripcion_hd, monto_usd, estado, pagado
+("sub_hd_001", 9.99, "completado", "si")
+("sub_hd_002", 14.99, "pendiente", "no")
+("sub_hd_003", 19.99, "completado", "si")
+("sub_hd_004", 29.99, "fallido", "no")
+("sub_hd_005", 39.99, "completado", "si")
+("sub_hd_006", 49.99, "pendiente", "no")
+("sub_hd_007", 59.99, "completado", "si")
+("sub_hd_008", 69.99, "fallido", "no")
+("sub_hd_009", 79.99, "completado", "si")
+("sub_hd_010", 89.99, "pendiente", "no")
+("sub_hd_011", 99.99, "completado", "si")
+("sub_hd_012", 109.99, "fallido", "no")
+("sub_hd_013", 119.99, "completado", "si")
+("sub_hd_014", 129.99, "pendiente", "no")
+("sub_hd_015", 139.99, "completado", "si")
+("sub_hd_016", 149.99, "fallido", "no")
+("sub_hd_017", 159.99, "completado", "si")
+("sub_hd_018", 169.99, "pendiente", "no")
+("sub_hd_019", 179.99, "completado", "si")
+("sub_hd_020", 189.99, "fallido", "no")
+("sub_hd_021", 199.99, "completado", "si")
+("sub_hd_022", 209.99, "pendiente", "no")
+("sub_hd_023", 219.99, "completado", "si")
+("sub_hd_024", 229.99, "fallido", "no")
+("sub_hd_025", 239.99, "completado", "si")
+("sub_hd_026", 249.99, "pendiente", "no")
+("sub_hd_027", 259.99, "completado", "si")
+("sub_hd_028", 269.99, "fallido", "no")
+("sub_hd_029", 279.99, "completado", "si")
+("sub_hd_030", 289.99, "pendiente", "no")
