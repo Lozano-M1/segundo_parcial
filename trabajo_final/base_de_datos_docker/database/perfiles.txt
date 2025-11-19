@@ -1,0 +1,35 @@
+Table Perfiles {
+  id_perfiles       serial [pk]
+  usuario           varchar
+  programas         text
+  edad              int
+  idioma            varchar
+  historial         text
+
+}
+
+usuario, programas, edad, idioma, historial
+("lozano", "sistemas", "25", "español", "ninguno")
+("martinez", "medicina", "30", "inglés", "ninguno")
+("gomez", "derecho", "28", "francés", "ninguno")
+("fernandez", "ingeniería", "22", "alemán", "ninguno")
+("ruiz", "arquitectura", "27", "italiano", "ninguno")
+("sanchez", "economía", "29", "portugués", "ninguno")
+("diaz", "psicología", "24", "chino", "ninguno")
+("torres", "biología", "26", "japonés", "ninguno")
+("ramirez", "historia", "31", "ruso", "ninguno")
+("vargas", "filosofía", "23", "árabe", "ninguno")
+("castro", "educación", "28", "holandés", "ninguno")
+("mendoza", "sociología", "30", "sueco", "ninguno")
+("ortiz", "antropología", "27", "noruego", "ninguno")
+("gutierrez", "geografía", "25", "danés", "ninguno")
+("silva", "literatura", "29", "finlandés", "ninguno")
+("navarro", "artes", "24", "húngaro", "ninguno")
+("rodriguez", "música", "26", "checo", "ninguno")
+("alvarez", "teatro", "31", "griego", "ninguno")
+("jimenez", "diseño", "22", "turco", "ninguno")
+("morales", "fotografía", "28", "coreano", "ninguno")
+("pena", "periodismo", "30", "vietnamita", "ninguno")
+("cortez", "publicidad", "27", "tailandés", "ninguno")
+("soto", "marketing", "25", "hebreo", "ninguno")
+("fuentes", "finanzas", "29", "polaco", "ninguno")

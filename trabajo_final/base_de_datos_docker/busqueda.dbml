@@ -1,0 +1,11 @@
+Table Pagos {
+  id_busqueda         serial [pk]
+  nombre_titulo       text
+  tipo                text
+  generos             text
+  sinopsis            text
+  ano_estreno         int
+}
+
+nombre_titulo, tipo, generos, sinopsis, ano_estreno
+("casa_de_papel",)

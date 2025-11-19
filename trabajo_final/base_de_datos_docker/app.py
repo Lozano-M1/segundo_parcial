@@ -55,16 +55,25 @@ def init_db():
             rechazado TEXT DEFAULT NULL
         )
     ''')
-    #     CREATE TABLE IF NOT EXISTS ventas (
-    #         id INTEGER PRIMARY KEY AUTOINCREMENT,
-    #         usuario_id INTEGER,
-    #         producto_id INTEGER,
-    #         cantidad INTEGER,
-    #         fecha_venta DATETIME DEFAULT CURRENT_TIMESTAMP,
-    #         FOREIGN KEY (usuario_id) REFERENCES usuarios (id),
-    #         FOREIGN KEY (producto_id) REFERENCES productos (id)
-    #     )
-    # ''')
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS busqueda (
+            id_busqueda INTEGER PRIMARY KEY AUTOINCREMENT,
+            nombre_titulo       text,
+            tipo                text,
+            generos             text,
+            ano_estreno         int
+        )
+    ''')
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS perfiles (
+            id_perfiles  INTEGER PRIMARY KEY AUTOINCREMENT,
+            usuario           varchar,
+            programas         text,
+            edad              int,
+            idioma            varchar,
+            historial         text
+        )
+    ''')
     
     # Insertar datos de ejemplo si no existen
     cursor.execute('SELECT COUNT(*) FROM Users')
@@ -170,6 +179,70 @@ def init_db():
            ("mora", "Grupo", 20240101, 20250101)
         ]
         cursor.executemany('INSERT INTO suscripciones (usuario, plan, fecha_inicio, fecha_fin) VALUES (?, ?, ?, ?)', suscripciones_ejemplo)
+
+
+        busqueda_ejemplo = [
+           ("avatar","pelicula" ,"ciencia ficcion", 2020),
+           ("guerra mundial z", "pelicula", "accion", 2010),
+           ("minions", "pelicula", "comedia", 2015),
+           ("stranger things", "serie", "ciencia ficcion", 2016),
+           ("la casa de papel", "serie", "accion", 2017),
+           ("friends", "serie", "comedia", 1994),
+           ("the witcher", "serie", "fantasia", 2019),
+           ("inception", "pelicula", "ciencia ficcion", 2010),
+           ("the office", "serie", "comedia", 2005),
+           ("breaking bad", "serie", "drama", 2008),
+           ("the mandalorian", "serie", "ciencia ficcion", 2019),
+           ("joker", "pelicula", "drama", 2019),
+           ("the crown", "serie", "drama", 2016),
+           ("black mirror", "serie", "ciencia ficcion", 2011),
+           ("la reina del sur", "serie", "drama", 2011),
+           ("game of thrones", "serie", "fantasia", 2011),
+           ("parasite", "pelicula", "drama", 2019),
+           ("avengers: endgame", "pelicula", "accion", 2019),
+           ("stranger things 4", "serie", "ciencia ficcion", 2022),
+           ("the batman", "pelicula", "accion", 2022),  
+           ("rapido y furioso 9", "pelicula", "accion", 2021),  
+           ("capitan america: civil war", "pelicula", "accion", 2016),
+           ("deadpool", "pelicula", "accion", 2016),        
+           ("black widow", "pelicula", "accion", 2021),       
+           ("wanda vision", "serie", "ciencia ficcion", 2021),  
+           ("loki", "serie", "ciencia ficcion", 2021),  
+           ("reverse", "pelicula", "ciencia ficcion", 2023),  
+           ("the last of us", "serie", "drama", 2023)   
+        ]
+        cursor.executemany('INSERT INTO busqueda (nombre_titulo, tipo, generos, ano_estreno) VALUES (?, ?, ?, ?)', busqueda_ejemplo)
+
+        perfiles_ejemplo = [
+           ("lozano", "sistemas", "25", "español", "ninguno"),
+           ("martinez", "medicina", "30", "inglés", "ninguno"),
+           ("gomez", "derecho", "28", "francés", "ninguno"),
+           ("fernandez", "ingeniería", "22", "alemán", "ninguno"),
+           ("ruiz", "arquitectura", "27", "italiano", "ninguno"),
+           ("sanchez", "economía", "29", "portugués", "ninguno"),
+           ("diaz", "psicología", "24", "chino", "ninguno"),
+           ("torres", "biología", "26", "japonés", "ninguno"),
+           ("ramirez", "historia", "31", "ruso", "ninguno"),
+           ("vargas", "filosofía", "23", "árabe", "ninguno"),
+           ("castro", "educación", "28", "holandés", "ninguno"),
+           ("flores", "comunicación", "25", "hindi", "ninguno"),
+           ("rivera", "marketing", "27", "bengalí", "ninguno"),
+           ("mendoza", "sociología", "30", "sueco", "ninguno"),
+           ("ortiz", "antropología", "27", "noruego", "ninguno"),
+           ("gutierrez", "geografía", "25", "danés", "ninguno"),
+           ("silva", "literatura", "29", "finlandés", "ninguno"),
+           ("navarro", "artes", "24", "húngaro", "ninguno"),
+           ("rodriguez", "música", "26", "checo", "ninguno"),
+           ("alvarez", "teatro", "31", "griego", "ninguno"),
+           ("jimenez", "diseño", "22", "turco", "ninguno"),
+           ("morales", "fotografía", "28", "coreano", "ninguno"),
+           ("pena", "periodismo", "30", "vietnamita", "ninguno"),
+           ("cortez", "publicidad", "27", "tailandés", "ninguno"),
+           ("soto", "marketing", "25", "hebreo", "ninguno"),
+           ("fuentes", "finanzas", "29", "polaco", "ninguno")
+        ]
+
+        cursor.executemany('INSERT INTO perfiles (usuario, programas, edad, idioma, historial) VALUES (?, ?, ?, ?, ?)', perfiles_ejemplo)
 
     conn.commit()
     conn.close()

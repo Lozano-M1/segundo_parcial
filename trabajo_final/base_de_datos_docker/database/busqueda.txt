@@ -1,0 +1,35 @@
+Table Busqueda {
+  id_busqueda         serial [pk]
+  nombre_titulo       text
+  tipo                text
+  generos             text          
+  ano_estreno         int
+}
+ 
+
+nombre_titulo, tipo, generos, sinopsis, ano_estreno
+("avatar","pelicula" ,"ciencia ficcion", 2020)
+("guerra mundial z", "pelicula", "accion", 2010)
+("minions", "pelicula", "comedia", 2015)
+("stranger things", "serie", "ciencia ficcion", 2016)
+("la casa de papel", "serie", "accion", 2017)
+("friends", "serie", "comedia", 1994)
+("the witcher", "serie", "fantasia", 2019)
+("inception", "pelicula", "ciencia ficcion", 2010)
+("the office", "serie", "comedia", 2005)
+("breaking bad", "serie", "drama", 2008)
+("the mandalorian", "serie", "ciencia ficcion", 2019)
+("joker", "pelicula", "drama", 2019)
+("the crown", "serie", "drama", 2016)
+("black mirror", "serie", "ciencia ficcion", 2011)
+("la reina del sur", "serie", "drama", 2011)
+("parasite", "pelicula", "drama", 2019)         
+("the batman", "pelicula", "accion", 2022)  
+("rapido y furioso 9", "pelicula", "accion", 2021)  
+("capitan america: civil war", "pelicula", "accion", 2016)
+("deadpool", "pelicula", "accion", 2016)        
+("black widow", "pelicula", "accion", 2021)       
+("wanda vision", "serie", "ciencia ficcion", 2021)  
+("loki", "serie", "ciencia ficcion", 2021)  
+("reverse", "pelicula", "ciencia ficcion", 2023)  
+("the last of us", "serie", "drama", 2023)   
